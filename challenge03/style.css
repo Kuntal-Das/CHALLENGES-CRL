@@ -17,14 +17,14 @@
   margin: 1.5rem 0;
   font-weight: 900;
   color: white;
-  width: 60%;
+  max-width: 720px;
 }
 
 .hero-text{
   font-size: 1.3rem;
   color: white;
   font-weight: 400;
-  width: 60%;
+  max-width: 720px;
 }
 
 .btn{
