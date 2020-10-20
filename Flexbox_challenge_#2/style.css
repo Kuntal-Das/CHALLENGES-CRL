@@ -1,23 +1,16 @@
 /* 
 ////// For this challenge ///////
 
-- You will have to modify the HTML
-
-- You can add new classes in the HTML
-  if you need to
+- All text is in the text.md file
 
 // Requirements
-1. The headings in the first row must be
-   a different color
-2. The two .col at the bottom must go next
-   to one another
-3. The section at the bottom should have
-   a dark background color and a different
-   color of text
-4. I've removed the "gap" that I created,
-   so you'll have to add it back in
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
 
-   */
+*/
 
 *,
 *::before,
@@ -31,43 +24,37 @@ body {
     font-size  : 1.3rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 h1 {
-    font-size: 3rem;
+    font-size : 3rem;
+    margin-top: 0;
 }
 
 .container {
     width    : 80%;
     max-width: 1100px;
-    margin   : 4em auto;
+    margin   : 0 auto;
 }
 
 .row {
     /* display: flex => flex container */
-    display: flex;
+    display        : flex;
+    justify-content: space-between;
 
     /* can't use yet */
-    /* gap: 1.5em; */
+    /* gap: 100px; */
 }
-
-.col+.col {
-    margin-left: 1.5em;
-}
-
 
 .col {
     /* these are now flex items */
-    width     : 100%;
-    text-align: center;
+    width: 100%;
 }
 
-.col p {
-    /* font-family: 'Roboto Regular'; */
-    font-size: 1.1em;
-    /* color : white; */
-}
-
-.col h2 {
-    font-size: 2.25rem;
+.col+.col {
+    margin-left: 30px;
 }
 
 .hero {
@@ -77,7 +64,12 @@ h1 {
 }
 
 .hero__text {
-    width: 60%;
+    width: 62%;
+}
+
+.hero__img {
+    width     : 32%;
+    align-self: flex-start;
 }
 
 .hero p {
@@ -100,17 +92,30 @@ h1 {
     opacity: .75;
 }
 
-.purple_text {
-    color: #87629A;
+.main {
+    margin-top: 2rem;
 }
 
-.bluefill {
+.content,
+.primary-content {
+    width: 62%;
+}
+
+.sidebar {
     background-color: #136C72;
     color           : whitesmoke;
-    width           : 100%;
-    padding         : 2em;
+    padding         : 1.5em;
+    width           : 32%;
 }
 
-.bluefill .container {
-    margin: 0 auto;
+.accentcolor1 {
+    color: #136C72;
+}
+
+.card {
+    text-align: center;
+}
+
+.card+.card {
+    margin-top: 4rem;
 }
