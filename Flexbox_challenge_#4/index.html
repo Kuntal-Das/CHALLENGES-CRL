@@ -5,10 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive layouts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+    <div class="hero flex_col_center">
+        <div class="container flex_col_center">
+            <p class="hero__text">lorem ipsum sit</p>
+            <h1 class="hero__title font--playfair">Responsive layouts don't have to be a struggle</h1>
+        </div>
+    </div>
+    <main class="main">
+        <section class="section section--primary">
+            <div class="container">
+                <h2 class="section__title font--playfair section__title--primary">Quality Designs</h2>
+                <div class="wrapper flex_row">
+                    <p class="section__text section__flex_item">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Dui vivamus arcu felis bibendum ut
+                        tristique. Arcu dui vivamus arcu felis. Sociis natoque
+                        penatibus et magnis dis</p>
+                    <p class="section__text section__flex_item">Felis donec et odio pellentesque diam volutpat. Aliquam
+                        purus sit amet luctus venenatis. Turpis in eu mi
+                        bibendum neque egestas congue quisque egestas.
+                        Pellentesque sit amet porttitor eget dolor morbi non.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section--secondary">
+            <div class="container flex_row">
+                <div class="wrapper section__flex_item">
+                    <h2 class="section__title font--playfair">Made custom for You</h2>
+                    <p class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                <img class="section__flex_item" src="img/image-01.jpg" alt="image-01">
+            </div>
+        </section>
+        <section class="section section--tertiary">
+            <div class="container flex_row">
+                <img class="section__flex_item" src="img/image-02.jpg" alt="image-02">
+                <div class="wrapper section__flex_item">
+                    <h2 class="section__title font--playfair">Created with care</h2>
+                    <p class="section__text">Felis donec et odio pellentesque diam volutpat. Aliquam
+                        purus sit amet luctus venenatis. Turpis in eu mi
+                        bibendum neque egestas congue quisque egestas.
+                        Pellentesque sit amet porttitor eget dolor morbi non.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
